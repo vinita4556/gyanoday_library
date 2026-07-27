@@ -5,7 +5,7 @@ import './Contact.css';
 const INFO = [
   { icon: '📍', label: 'Address', value: '50, Bima Rd, Shiv Shakti Nagar, Nagar Nigam Colony, Dewas, Madhya Pradesh 455001' },
   { icon: '📞', label: 'Phone', value: '+91 9826527427' },
-  { icon: '✉️', label: 'Email', value: 'hello@studynest.in' },
+  { icon: '✉️', label: 'Email', value: 'gyanodaylibrary2025@gmail.com' },
   { icon: '🕒', label: 'Opening Hours', value: `8:00 AM – 11:00 PM , Open 7 Days a Week`, }
 ];
 

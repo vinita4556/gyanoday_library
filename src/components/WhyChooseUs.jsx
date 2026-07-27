@@ -5,7 +5,7 @@ import studyGirl from '../assets/icon2.png';
 const FEATURES = [
   {
     icon: '🤫',
-    title: 'Silent Environment',
+    title: 'Peaceful Environment',
     desc: 'A strictly maintained silent zone so every minute at your desk stays focused.',
   },
   {
