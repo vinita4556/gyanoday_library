@@ -30,7 +30,7 @@ export default function Navbar() {
        <a href="#home" className="navbar__logo">
        <img src={logo} alt="StudyNest Logo" className="navbar__logo-img" />
        <span className="navbar__logo-text">
-       Gyanodaya 
+       Gyanoday 
        <span className="navbar__logo-sub">
        Self Study Library
        </span>

@@ -68,7 +68,7 @@ export default function Testimonials() {
                 </div>
                 <p className="testimonial-card__text">&ldquo;{r.review}&rdquo;</p>
                 <div className="testimonial-card__person">
-                  <img src={r.avatar} alt={`Portrait of ${r.name}`} />
+             
                   <div>
                     <strong>{r.name}</strong>
                     <span>{r.exam}</span>
