@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Navbar.css';
-import logo from "../assets/main.png"; // apne folder ke hisab se path change kar lena
+import logo from "../assets/main.png"; 
 
 const LINKS = [
   { label: 'Home', href: '#home' },
