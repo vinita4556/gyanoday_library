@@ -21,7 +21,7 @@ export default function Hero() {
             completely distraction-free atmosphere.
           </p>
           <div className="hero__actions">
-            <a href="#plans" className="btn btn-primary">Explore Library</a>
+            <a href="#contact" className="btn btn-primary">Explore Library</a>
             <a href="#facilities" className="btn btn-ghost">View Facilities</a>
           </div>
         </div>
