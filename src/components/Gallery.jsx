@@ -5,7 +5,7 @@ import student from "../assets/student.png";
 import chairs from "../assets/chairs.png";
 import cabins from "../assets/cabins.png";
 import sitting from "../assets/sitting.png";
-import chatgpt from "../assets/chatgpt.png";
+import chatgpt from "../assets/ChatGPT.png";
 const IMAGES = [
   {
     src: rec,
