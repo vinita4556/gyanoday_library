@@ -1,54 +1,92 @@
+
 /* ==========================================================================
-   StudyNest — Design Tokens & Global Styles
+   StudyNest — Blue & White Design System
    ========================================================================== */
 
 :root {
   /* =========================
-     Premium Navy Blue + White
+     PRIMARY BLUE
   ========================= */
 
-  /* Primary */
-  --color-primary: #315E9E;        /* Soft Navy Blue */
-  --color-primary-dark: #284F87;   /* Hover */
-  --color-primary-light: #6F9FE8;  /* Light Blue */
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-primary-light: #60A5FA;
 
-  /* Backgrounds */
-  --color-bg: #F7FAFD;
+  /* =========================
+     BACKGROUNDS
+  ========================= */
+
+  --color-bg: #F8FBFF;
   --color-white: #FFFFFF;
-  --color-secondary: #EAF2FF;
-  --color-accent-light: #F2F7FF;
+  --color-secondary: #DBEAFE;
+  --color-accent-light: #EFF6FF;
 
-  /* Text */
-  --color-text: #1E293B;
+  /* =========================
+     TEXT
+  ========================= */
+
+  --color-text: #0F172A;
   --color-text-muted: #64748B;
 
-  /* Accent */
-  --color-accent: #4F7ECF;
+  /* =========================
+     ACCENT
+  ========================= */
 
-  /* Shadows */
-  --shadow-sm: 0 4px 16px rgba(49,94,158,0.08);
-  --shadow-md: 0 12px 30px rgba(49,94,158,0.12);
-  --shadow-lg: 0 20px 50px rgba(49,94,158,0.18);
-  --shadow-glow: 0 15px 40px rgba(79,126,207,0.20);
+  --color-accent: #3B82F6;
 
-  /* Radius */
+  /* =========================
+     SHADOWS
+  ========================= */
+
+  --shadow-sm:
+    0 4px 16px rgba(37, 99, 235, 0.08);
+
+  --shadow-md:
+    0 12px 30px rgba(37, 99, 235, 0.12);
+
+  --shadow-lg:
+    0 20px 50px rgba(37, 99, 235, 0.18);
+
+  --shadow-glow:
+    0 15px 40px rgba(37, 99, 235, 0.20);
+
+  /* =========================
+     BORDER RADIUS
+  ========================= */
+
   --radius-sm: 12px;
   --radius-md: 16px;
   --radius-lg: 22px;
   --radius-pill: 999px;
 
-  /* Fonts */
+  /* =========================
+     FONTS
+  ========================= */
+
   --font-display: 'Poppins', sans-serif;
   --font-body: 'Inter', sans-serif;
 
-  /* Motion */
-  --ease-out: cubic-bezier(0.16,1,0.3,1);
-  --dur-fast: .3s;
-  --dur-med: .5s;
-  --dur-slow: .8s;
+  /* =========================
+     ANIMATION
+  ========================= */
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --dur-fast: 0.3s;
+  --dur-med: 0.5s;
+  --dur-slow: 0.8s;
+
+  /* =========================
+     CONTAINER
+  ========================= */
 
   --container-w: 1240px;
 }
+
+
+/* ==========================================================================
+   GLOBAL RESET
+   ========================================================================== */
 
 * {
   box-sizing: border-box;
@@ -56,32 +94,67 @@
   padding: 0;
 }
 
+
+/* ==========================================================================
+   HTML
+   ========================================================================== */
+
 html {
   scroll-behavior: smooth;
 }
 
+
+/* ==========================================================================
+   BODY
+   ========================================================================== */
+
 body {
   font-family: var(--font-body);
-  background:#F8FBFF;
-  color:#0F172A;
+
+  background: var(--color-bg);
+
+  color: var(--color-text);
+
   line-height: 1.6;
+
   -webkit-font-smoothing: antialiased;
+
   overflow-x: hidden;
 }
+
+
+/* ==========================================================================
+   IMAGES
+   ========================================================================== */
 
 img {
   max-width: 100%;
   display: block;
 }
 
+
+/* ==========================================================================
+   LINKS
+   ========================================================================== */
+
 a {
   text-decoration: none;
   color: inherit;
 }
 
+
+/* ==========================================================================
+   LISTS
+   ========================================================================== */
+
 ul {
   list-style: none;
 }
+
+
+/* ==========================================================================
+   BUTTONS
+   ========================================================================== */
 
 button {
   font-family: inherit;
@@ -90,186 +163,422 @@ button {
   background: none;
 }
 
-h1, h2, h3, h4 {
+
+/* ==========================================================================
+   HEADINGS
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-display);
+
   color: var(--color-text);
+
   line-height: 1.15;
+
   font-weight: 700;
 }
 
-::selection {
-  background:#DBEAFE;
-  color:#1D4ED8;
-}
-
-:focus-visible{
-    outline:2px solid var(--color-primary-light);
-    outline-offset:3px;
-}
 
 /* ==========================================================================
-   Layout utilities
+   TEXT SELECTION
+   ========================================================================== */
+
+::selection {
+  background: var(--color-secondary);
+  color: var(--color-primary-dark);
+}
+
+
+/* ==========================================================================
+   FOCUS
+   ========================================================================== */
+
+:focus-visible {
+  outline: 2px solid var(--color-primary-light);
+
+  outline-offset: 3px;
+}
+
+
+/* ==========================================================================
+   LAYOUT UTILITIES
    ========================================================================== */
 
 .container {
   width: 100%;
+
   max-width: var(--container-w);
+
   margin: 0 auto;
+
   padding: 0 24px;
 }
+
+
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
 
 .section {
   padding: 110px 0;
 }
 
-@media (max-width: 900px) {
-  .section { padding: 72px 0; }
-}
 
 .section-alt {
-  background:#FFFFFF;
+  background: var(--color-white);
 }
+
+
+/* ==========================================================================
+   SECTION HEAD
+   ========================================================================== */
 
 .section-head {
   text-align: center;
+
   max-width: 640px;
+
   margin: 0 auto 60px;
 }
 
+
 .eyebrow {
   display: inline-flex;
+
   align-items: center;
+
   gap: 8px;
+
   font-family: var(--font-display);
+
   font-size: 13px;
+
   font-weight: 600;
+
   letter-spacing: 0.08em;
+
   text-transform: uppercase;
-  color:var(--color-primary);
-  background:var(--color-secondary);
+
+  color: var(--color-primary);
+
+  background: var(--color-secondary);
+
   padding: 8px 18px;
+
   border-radius: var(--radius-pill);
+
   margin-bottom: 18px;
 }
 
+
 .section-head h2 {
   font-size: clamp(28px, 3.6vw, 40px);
+
   margin-bottom: 14px;
+
+  color: var(--color-text);
 }
+
 
 .section-head p {
   color: var(--color-text-muted);
+
   font-size: 16.5px;
 }
 
+
 /* ==========================================================================
-   Buttons
+   BUTTONS
    ========================================================================== */
 
 .btn {
   display: inline-flex;
+
   align-items: center;
+
   justify-content: center;
+
   gap: 8px;
+
   font-family: var(--font-display);
+
   font-weight: 600;
+
   font-size: 15px;
+
   padding: 15px 30px;
+
   border-radius: var(--radius-pill);
-  transition: transform var(--dur-fast) var(--ease-out), box-shadow var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out);
+
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    background var(--dur-fast) var(--ease-out);
+
   white-space: nowrap;
 }
 
-.btn-primary{
-    background: var(--color-primary);
-    border:2px solid var(--color-primary);
-    color:#fff;
+
+/* Primary Button */
+
+.btn-primary {
+  background: var(--color-primary);
+
+  border: 2px solid var(--color-primary);
+
+  color: var(--color-white);
+
+  box-shadow:
+    0 8px 20px rgba(37, 99, 235, 0.18);
 }
 
-.btn-primary:hover{
-    background: var(--color-primary-dark);
-    border-color: var(--color-primary-dark);
+
+.btn-primary:hover {
+  background: var(--color-primary-dark);
+
+  border-color: var(--color-primary-dark);
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 28px rgba(37, 99, 235, 0.25);
 }
 
-.btn-ghost{
-    border:2px solid var(--color-primary);
-    color:var(--color-primary);
+
+/* Ghost Button */
+
+.btn-ghost {
+  border: 2px solid var(--color-primary);
+
+  color: var(--color-primary);
+
+  background: transparent;
 }
 
-.btn-ghost:hover{
-    background:var(--color-primary);
-    color:#fff;
+
+.btn-ghost:hover {
+  background: var(--color-primary);
+
+  color: var(--color-white);
+
+  transform: translateY(-3px);
 }
+
+
+/* Outline Button */
 
 .btn-outline {
   background: transparent;
+
   color: var(--color-primary);
+
   border: 1.5px solid var(--color-primary);
 }
 
+
 .btn-outline:hover {
   background: var(--color-primary);
+
   color: var(--color-white);
+
   transform: translateY(-3px);
 }
+
+
+/* Full Width Button */
 
 .btn-block {
   width: 100%;
 }
 
+
 /* ==========================================================================
-   Cards & glass
+   CARDS / GLASS
    ========================================================================== */
 
 .glass {
-  background: rgba(255, 255, 255, 0.65);
+  background: rgba(255, 255, 255, 0.72);
+
   backdrop-filter: blur(14px);
+
   -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+
+  border: 1px solid rgba(255, 255, 255, 0.7);
+
+  box-shadow: var(--shadow-sm);
 }
 
+
 /* ==========================================================================
-   Scroll reveal
+   BLUE CARD STYLE
+   ========================================================================== */
+
+.card {
+  background: var(--color-white);
+
+  border: 1px solid #E5EDFA;
+
+  border-radius: var(--radius-md);
+
+  box-shadow: var(--shadow-sm);
+
+  transition:
+    transform var(--dur-fast) var(--ease-out),
+    box-shadow var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out);
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+
+  border-color: #BFDBFE;
+
+  box-shadow: var(--shadow-md);
+}
+
+
+/* ==========================================================================
+   SCROLL REVEAL
    ========================================================================== */
 
 .reveal {
   opacity: 0;
+
   transform: translateY(28px);
-  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+
+  transition:
+    opacity 0.8s var(--ease-out),
+    transform 0.8s var(--ease-out);
 }
+
 
 .reveal.is-visible {
   opacity: 1;
+
   transform: translateY(0);
 }
 
+
 .reveal-zoom {
   opacity: 0;
+
   transform: scale(0.94);
-  transition: opacity 0.8s var(--ease-out), transform 0.8s var(--ease-out);
+
+  transition:
+    opacity 0.8s var(--ease-out),
+    transform 0.8s var(--ease-out);
 }
+
 
 .reveal-zoom.is-visible {
   opacity: 1;
+
   transform: scale(1);
 }
 
-.delay-1 { transition-delay: 0.1s; }
-.delay-2 { transition-delay: 0.2s; }
-.delay-3 { transition-delay: 0.3s; }
-.delay-4 { transition-delay: 0.4s; }
-.delay-5 { transition-delay: 0.5s; }
+
+/* ==========================================================================
+   ANIMATION DELAYS
+   ========================================================================== */
+
+.delay-1 {
+  transition-delay: 0.1s;
+}
+
+.delay-2 {
+  transition-delay: 0.2s;
+}
+
+.delay-3 {
+  transition-delay: 0.3s;
+}
+
+.delay-4 {
+  transition-delay: 0.4s;
+}
+
+.delay-5 {
+  transition-delay: 0.5s;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — TABLET
+   ========================================================================== */
+
+@media (max-width: 900px) {
+
+  .section {
+    padding: 72px 0;
+  }
+
+  .container {
+    padding: 0 20px;
+  }
+
+}
+
+
+/* ==========================================================================
+   RESPONSIVE — MOBILE
+   ========================================================================== */
+
+@media (max-width: 600px) {
+
+  .section {
+    padding: 60px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .section-head {
+    margin-bottom: 40px;
+  }
+
+  .section-head p {
+    font-size: 15px;
+  }
+
+  .btn {
+    padding: 13px 24px;
+
+    font-size: 14px;
+  }
+
+}
+
+
+/* ==========================================================================
+   ACCESSIBILITY — REDUCED MOTION
+   ========================================================================== */
 
 @media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .reveal, .reveal-zoom {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .reveal-zoom {
     opacity: 1;
+
     transform: none;
+
     transition: none;
   }
+
   * {
     animation-duration: 0.001ms !important;
+
     animation-iteration-count: 1 !important;
+
     transition-duration: 0.001ms !important;
   }
+
 }
