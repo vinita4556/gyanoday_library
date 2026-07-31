@@ -6,7 +6,6 @@ import chairs from "../assets/chairs.png";
 import cabins from "../assets/cabins.png";
 import sitting from "../assets/sitting.png";
 import chatgpt from "../assets/chatgpt.png";
-
 const IMAGES = [
   {
     src: rec,
