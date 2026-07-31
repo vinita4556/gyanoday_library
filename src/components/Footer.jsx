@@ -1,5 +1,5 @@
 import './Footer.css';
-import Logo from '../assets/Logo.png'; 
+import logo from '../assets/logo.png'; 
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -28,7 +28,7 @@ export default function Footer() {
       <div className="container footer__grid">
         <div className="footer__brand">
           <a href="#home" className="footer__logo">
-           <img src={Logo} alt="Gyanoday Library Logo" className="footer__logo-img" />
+           <img src={logo} alt="Gyanoday Library Logo" className="footer__logo-img" />
             <span>Gyanoday Library</span>
           </a>
           <p>

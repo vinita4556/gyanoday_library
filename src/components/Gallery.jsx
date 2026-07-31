@@ -5,7 +5,7 @@ import student from "../assets/student.png";
 import chairs from "../assets/chairs.png";
 import cabins from "../assets/cabins.png";
 import sitting from "../assets/sitting.png";
-import ChatGpt from "../assets/ChatGpt.png";
+import chatgpt from "../assets/chatgpt.png";
 
 const IMAGES = [
   {
@@ -25,7 +25,7 @@ const IMAGES = [
     label: 'Reception',
   },
   {
-    src: ChatGpt,
+    src: chatgpt,
     alt: 'Library interior with tall bookshelves',
     label: 'Students Studying',
     tall: true,
