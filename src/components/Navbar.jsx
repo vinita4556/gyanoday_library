@@ -30,9 +30,10 @@ export default function Navbar() {
        <a href="#home" className="navbar__logo">
        <img src={logo} alt="StudyNest Logo" className="navbar__logo-img" />
        <span className="navbar__logo-text">
-       Gyanoday 
+        ज्ञानोदय लाइब्रेरी
        <span className="navbar__logo-sub">
-       Self Study Library
+        शुरुआत से..<br></br>
+        &nbsp; &nbsp; &nbsp;सफलता तक
        </span>
        </span>
        </a>
