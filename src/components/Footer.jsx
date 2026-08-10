@@ -29,7 +29,7 @@ export default function Footer() {
         <div className="footer__brand">
           <a href="#home" className="footer__logo">
            <img src={logo} alt="Gyanoday Library Logo" className="footer__logo-img" />
-            <span>Gyanoday Library</span>
+            <span> ज्ञानोदय लाइब्रेरी</span>
           </a>
           <p>
             A peaceful, distraction-free self study library for serious competitive

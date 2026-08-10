@@ -35,7 +35,7 @@ export default function Contact() {
         <Reveal as="div" className="section-head">
           <span className="eyebrow">Contact</span>
 
-          <h2>Visit Gyanodaya Library</h2>
+          <h2>Visit  ज्ञानोदय लाइब्रेरी</h2>
 
           <p>
             Have a question about the space or facilities?
