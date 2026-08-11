@@ -40,7 +40,7 @@ export default function WhyChooseUs() {
     <section id="why-us" className="section why">
       <div className="container">
         <Reveal as="div" className="section-head">
-          <span className="eyebrow">Why Choose Gyanoday Library</span>
+          <span className="eyebrow">Why Choose  ज्ञानोदय लाइब्रेरी</span>
           <h2>Everything you need to focus, nothing that pulls you away</h2>
           <p>
             Every detail — from lighting to layout — is designed around one goal:
