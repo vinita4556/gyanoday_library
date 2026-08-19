@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Navbar.css';
-import logo from "../assets/main.png"; 
+import logo from "../assets/monol.png"; 
 
 const LINKS = [
   { label: 'Home', href: '#home' },
